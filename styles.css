@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #67b26f, #4ca2cd);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 500px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .search-container {
+    display: flex;
+    margin-bottom: 30px;
+  }
+  
+  #city-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px 0 0 8px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  #search-btn {
+    background-color: #4ca2cd;
+    color: white;
+    border: none;
+    padding: 0 20px;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #search-btn:hover {
+    background-color: #3a91bc;
+  }
+  
+  .weather-container {
+    position: relative;
+  }
+  
+  .weather-info,
+  .error-message,
+  .initial-message {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .location {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #city-name {
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  #country {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .weather-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .weather-icon {
+    margin-right: 20px;
+  }
+  
+  .weather-icon img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .temperature {
+    text-align: center;
+  }
+  
+  #temperature {
+    font-size: 2.5rem;
+    color: #333;
+  }
+  
+  #description {
+    font-size: 1.2rem;
+    color: #666;
+    text-transform: capitalize;
+  }
+  
+  .additional-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    width: 30%;
+    min-width: 120px;
+    margin-bottom: 10px;
+  }
+  
+  .info-item i {
+    font-size: 1.5rem;
+    color: #4ca2cd;
+    margin-right: 10px;
+  }
+  
+  .info-item div p:first-child {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .info-item div p:last-child {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .error-message {
+    color: #e74c3c;
+    text-align: center;
+  }
+  
+  .initial-message {
+    color: #666;
+    text-align: center;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+
+  @media (max-width: 600px) {
+    .container {
+      padding: 20px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+  
+    .additional-info {
+      flex-direction: column;
+    }
+  
+    .info-item {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  }
+  

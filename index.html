@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Météo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Application Météo</h1>
+        
+        <div class="search-container">
+            <input type="text" id="city-input" placeholder="Entrez une ville...">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        
+        <div class="weather-container" id="weather-container">
+            <div class="weather-info hidden" id="weather-info">
+                <div class="location">
+                    <h2 id="city-name">--</h2>
+                    <p id="country">--</p>
+                </div>
+                
+                <div class="weather-details">
+                    <div class="weather-icon">
+                        <img id="weather-icon" src="/placeholder.svg" alt="Icône météo">
+                    </div>
+                    
+                    <div class="temperature">
+                        <h2 id="temperature">--°C</h2>
+                        <p id="description">--</p>
+                    </div>
+                </div>
+                
+                <div class="additional-info">
+                    <div class="info-item">
+                        <i class="fas fa-temperature-high"></i>
+                        <div>
+                            <p>Ressenti</p>
+                            <p id="feels-like">--°C</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-tint"></i>
+                        <div>
+                            <p>Humidité</p>
+                            <p id="humidity">--%</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-wind"></i>
+                        <div>
+                            <p>Vent</p>
+                            <p id="wind-speed">-- km/h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="error-message hidden" id="error-message">
+                <p>Ville non trouvée. Veuillez vérifier le nom de la ville et réessayer.</p>
+            </div>
+            
+            <div class="initial-message" id="initial-message">
+                <p>Entrez le nom d'une ville pour obtenir les informations météorologiques.</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
